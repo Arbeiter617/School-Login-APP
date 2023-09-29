@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>ID APP V2</title>
+
+</head>
+<body>
+  
+  <p>REGISTER</p>
+  <br/>
+  <form id="myForm2">
+    <label>Full Name</label>
+    <br/>
+    <input name="full_name" class="name_input2"/>
+    <br/>
+    <label>Student ID</label>
+    <br/>
+    <input name="studentID" class="studentID_input2">
+    <br/>
+    <label>LASID</label>
+    <br/>
+    <input name="lasid" class="lasid_input">
+    <br/>
+    <br/>
+  </form>
+  <button onclick="register()">Register</button>
+<br>
+<br>
+
+<p>ALREADY HAVE AN ACCOUNT?</p>
+  <form id="myForm2">
+    <label>Student ID</label>
+    <br/>
+    <input name="studentID" class="studentID_login">
+    <br/>
+    <br/>
+  </form>
+<button onclick="login()">Loggin</button>
+<br>
+<br>
+<p>LOGGING OUT?</p>
+  <form id="myForm2">
+    <label>Student ID</label>
+    <br/>
+    <input name="studentID" class="studentID_loggout">
+    <br/>
+    <br/>
+  </form>
+<button onclick="loggout()">Loggout</button>
+
+<br>
+<br>
+<br>
+<button onclick="cache()">Clear Cache</button>
+
+<!-- Modal -->
+<div id="testModel" class="w3-modal w3-animate-opacity">
+  <div class="w3-modal-content" style="padding:32px">
+    <div class="w3-container w3-white">
+      <i onclick="document.getElementById('testModel').style.display='none'" class="fa fa-remove w3-xlarge w3-button w3-transparent w3-right w3-xlarge"></i>
+      <h2 class="w3-wide">YOU HAVE BEEN REGISTERED!</h2>
+      <p id="reg_text"></p>
+    </div>
+  </div>
+</div>
+<!-- logged in model -->
+<div id="logged_in_modal" class="w3-modal w3-animate-opacity">
+  <div class="w3-modal-content" style="padding:32px">
+    <div class="w3-container w3-white">
+      <i onclick="document.getElementById('logged_in_modal').style.display='none'" class="fa fa-remove w3-xlarge w3-button w3-transparent w3-right w3-xlarge"></i>
+      <h2 class="w3-wide">YOU HAVE BEEN LOGGED IN!</h2>
+      <p id="reg_text2"></p>
+    </div>
+  </div>
+</div>
+<!-- logged out model -->
+<div id="logged_out_modal" class="w3-modal w3-animate-opacity">
+  <div class="w3-modal-content" style="padding:32px">
+    <div class="w3-container w3-white">
+      <i onclick="document.getElementById('logged_out_modal').style.display='none'" class="fa fa-remove w3-xlarge w3-button w3-transparent w3-right w3-xlarge"></i>
+      <h2 class="w3-wide">YOU HAVE BEEN LOGGED OUT!</h2>
+      <p id="reg_text3"></p>
+    </div>
+  </div>
+</div>
+
+
+</body>
+<script src="./script.js"></script>
+</html>
